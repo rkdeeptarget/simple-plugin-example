@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirected Page</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+    }
+
+    #clickArea {
+      padding: 20px;
+      background-color: lightblue;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h2>Click the box below</h2>
+  <div id="clickArea">Click me</div>
+
+  <script>
+    document.getElementById("clickArea").addEventListener("click", function () {
+      alert("Click handler triggered!");
+    });
+  </script>
+</body>
+</html>

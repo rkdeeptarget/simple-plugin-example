@@ -31,6 +31,8 @@ app.set('view engine', 'ejs')
 
 app.use('/public/', express.static('./public'));
 
+app.use('/testplugin', express.static('./public/testplugin'))
+
 app.use('/auth', authRouter)
 
 app.get('/', (req, res) => {
